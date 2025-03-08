@@ -119,6 +119,11 @@ STATIC_URL = 'static/'
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
+LOGIN_URL = '/login/'
+LOGIN_REDIRECT_URL = '/dashboard/'
+LOGOUT_REDIRECT_URL = '/'
+
+AUTH_USER_MODEL = 'principal.Usuario'
 DEFAULT_AUTO_FIELD = 'django_mongodb_backend.fields.ObjectIdAutoField'
 
 MIGRATION_MODULES = {

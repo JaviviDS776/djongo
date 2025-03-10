@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-wf!7q15=fqo!%@(q#h=7rt8=$!lm97_v(up&4do1*bbi69a_h(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['184.169.146.137']
+ALLOWED_HOSTS = ['184.169.146.137','wjournal.duckdns.org']
 STATIC_ROOT = os.path.join(BASE_DIR, "static/")
 
 # Application definition
@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'principal',
 ]
 
 MIDDLEWARE = [
